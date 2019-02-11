@@ -1,0 +1,18 @@
+<?xml version="1.0" ?> 
+<project name="HelloWorld" default="run" basedir=".">
+	
+	<target name="compile" >
+		<javac srcdir="." />
+		<echo> Compilation Completed! </echo>
+	</target>
+	
+	 <target name="run" depends="compile">
+	   <echo> Running Java program! </echo>
+       <java classname="HelloWorld" fork="true"/>
+	</target>
+
+	
+</project>
+
+
+
